@@ -1,0 +1,31 @@
+body{
+  background-color: aqua;
+}
+
+.post{
+display: flex;
+  padding: 10px;
+font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color:cadetblue;
+  height: 15%;
+  width: 80%;
+}
+img{
+  padding: 2px;
+  margin-right: 20px;
+  float:left;
+  width: 15%;
+  border-style: solid;
+  border-width: 3px;
+border-color:burlywood;
+  border-radius: 15px 0 0 15px;
+}
+p{
+  line-height: 30px;
+}

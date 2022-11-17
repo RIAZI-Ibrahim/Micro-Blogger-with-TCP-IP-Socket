@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="mainBox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.gui.PrimaryController">
+   <children>
+      <Label fx:id="loginLabel" opacity="0.82" text="MicroBlogAmu">
+         <font>
+            <Font name="HelveticaRounded-Bold" size="76.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.05" surfaceScale="5.81">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="95.23" elevation="65.93">
+                     <color>
+                        <Color red="0.13858430087566376" green="0.8552631735801697" blue="0.8074845671653748" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <ImageView fx:id="imgv" fitHeight="109.0" fitWidth="166.0" focusTraversable="true" opacity="0.82" pickOnBounds="false" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+         <effect>
+            <Lighting specularExponent="14.88" surfaceScale="3.36">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="187.33">
+                     <color>
+                        <Color red="0.24439571797847748" green="0.6167397499084473" blue="0.7763158082962036" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="560.0" spacing="15.0" VBox.vgrow="NEVER">
+         <children>
+            <TextField fx:id="nameField" prefHeight="45.0" prefWidth="300.0" promptText="username">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="30.0" layoutY="260.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="560.0" spacing="15.0" VBox.vgrow="NEVER">
+         <children>
+            <PasswordField fx:id="passField" prefHeight="45.0" prefWidth="300.0" promptText="password">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <Button fx:id="loginBtn" alignment="CENTER" mnemonicParsing="false" onAction="#login" text="LOGIN">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <effect>
+            <Glow />
+         </effect>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Button>
+      <Text fx:id="serverMsg" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="RED" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Realised By : ZIDANI FAHED IMED and RIAZI IBRAHIM for Computer NETWORK COURSE" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana" size="11.0" />
+         </font>
+      </Text>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

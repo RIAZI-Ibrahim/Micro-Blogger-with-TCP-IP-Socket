@@ -1,0 +1,76 @@
+body {
+    background:rgb(77, 120, 115);
+    align-content:center;
+}
+
+.card {
+  display: block;
+    border:  2px solid vec4(0.14, 0.18, 0.27, 0.73);
+    border-style:groove;
+    height: auto;
+    border-radius: 15px;
+    background: lightskyblue;
+}
+
+.forms-inputs {
+    position: relative
+}
+
+.forms-inputs span {
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    background-color: lightskyblue;
+    padding: 5px 10px;
+    font-size: 15px
+}
+
+.forms-inputs input {
+  text-align: center;
+    height: 50px;
+    border: 2px solid lightslategrey;
+    background: lightskyblue;
+    font-size: 20px;
+}
+
+.forms-inputs input:focus {
+    box-shadow: none;
+    outline: none;
+    border: 2px solid #000
+}
+
+.btn {
+    height: 50px;
+}
+.btb:hover{
+  background: black;
+}
+h1{
+text-align: center;
+  font-size: 75px;
+  font-family:fantasy;
+  margin:20px;
+  opacity: 0.80;
+  filter:invert(5%);
+
+}
+h1:hover{
+  opacity: 1.0;
+  filter:invert(0%);
+
+}
+img{
+
+  margin: 2em;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+  opacity: 0.80;
+  filter:invert(5%);
+
+}
+img:hover{
+  opacity: 1.0;
+  filter:invert(0%);
+}
